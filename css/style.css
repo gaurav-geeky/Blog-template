@@ -4,24 +4,31 @@
 }
 
 .navigation {
+    margin-top: 25px;
     font-family: var(--font1);
     height: 74px;
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-left {
-    font-size: 20px;
     display: flex;
+
+}
+
+.nav-left span {
+    font-size: 35px;
+    padding-top: 10px;
 }
 
 .nav-left ul {
     display: flex;
     align-items: center;
     margin: 0px 70px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .nav-left ul li {
@@ -43,24 +50,34 @@
 
 .content {
     height: 395px;
-    /* background-color: rgb(162, 162, 239); */
+    /* background-color: rgb(214, 214, 247); */
     display: flex;
-    margin-top: 32px; 
-    padding: 9px;
+    margin-top: 32px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background-image: url('../img/11.svg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
 }
 
 .content-left {
     font-family: var(--font1);
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+    padding: 50px;
 }
 
 .content-right {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .content-right img {
@@ -69,10 +86,45 @@
     border-radius: 50%;
 }
 
+.home-articles {
+    padding: 18px;
+    background-color: rgb(255, 235, 235, 0.5);
+}
+
+.home-article {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black; 
+}
+
+.home-article img {
+    width: 300px; 
+    height: 210px;
+}
+
 
 .footer {
     height: 50px;
-    /* background-color: blueviolet; */
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 

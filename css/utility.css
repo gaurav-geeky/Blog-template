@@ -2,10 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
 
 :root {
-    --main-bg-color: brown;
+    --main-bg-color: purple;
     --font1: 'Baloo Bhaina 2', cursive;
     --font2: 'Roboto', sans-serif;
+}
 
+.font1 {
+    font-family: var(--font1);
+}
+
+.font2 {
+    font-family: var(--font2);
 }
 
 .max-width-1 {
@@ -13,11 +20,16 @@
 }
 
 .max-width-2 {
-    max-width: 20vw;
+    max-width: 60vw;
 }
 
 .m-auto {
     margin: auto;
+}
+
+.my-2 {
+    margin-bottom: 12px;
+    margin-top: 12px; 
 }
 
 .btn {
@@ -27,7 +39,7 @@
     border: 2px solid black;
     border-radius: 4px;
     font-family: var(--font1);
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
